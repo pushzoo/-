@@ -1,0 +1,63 @@
+@charset "UFT-8";
+
+/* ========================미디어 쿼리======================== */
+
+@media (max-width: 1280px){
+
+    main {
+        margin-top: 100px;
+    }
+
+    section.cartList .cartandpay {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 1vh; /* margin-top adjusted with viewport height */
+    row-gap: 2vh;
+}
+
+}
+
+
+
+@media (min-width: 1281px){
+    
+    main {
+        margin-top: 130px;
+        padding: 20px 270px;
+    }
+
+    .goodsGroup-scroll {
+        height: 100%; /* 항상 펼쳐진 상태로 설정 */
+        overflow-x: auto; /* 가로 스크롤 가능 */
+    }
+
+    .toggle-btn {
+        display: none; /* 버튼 숨기기 */
+    }
+
+    section.cartList .cartandpay {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 24px;
+        margin-top: 1vh;
+    }
+
+    section.cartList .cartandpay .clist {
+        width: 900px;
+    }
+
+    section.cartList .cartandpay .price {
+        width: 444px;
+    }
+    section.cartList .clist .listGoods .gImg {
+        border: 1px solid #000; /* border adjusted to rem */
+        width: 156px; 
+        height: 155px;
+    }
+
+    /* pc 버전에서 보여야 할 것 */
+    .p-sidePopup {
+        display: block;
+    }
+
+}

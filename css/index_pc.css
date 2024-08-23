@@ -1,0 +1,234 @@
+@charset "UFT-8";
+
+/*========================= tablet 769~ =========================*/
+@media (min-width: 769px) {
+    /* main popup icon */
+    .pI1 {
+        top: 20px;
+        left: 50px;
+    }
+    .pI2 {
+        top: 150px;
+    }
+    .pI3 {
+        left: 650px;
+    }  
+}
+
+/*========================= pc 1280~ =========================*/
+@media (min-width: 1280px) {
+
+    .m_m_contanier {
+        display: none;
+    }
+
+    .p_m_container {
+        display: block;
+    }
+
+    .p_m_banner_container {
+        position: relative;
+        top: 170px;
+        width: calc(100% - 540px);
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .p_m_bannerImg_container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 300%;
+    }
+    .bannerImg {
+        width: 100%;
+    }
+    .p_m_bannerImg_container img {
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        object-fit: cover;
+    }
+
+    /* main popup icon */
+    .p_m_popupIcon {
+        position: absolute;
+    }
+
+    .pI1 {
+        top: 15vw;
+        left: 5vw;
+    }
+    .pI1 img {
+        width: 70px;
+    }
+    .pI2 {
+        top: 23vw;
+        right: 5vw;
+    }
+    .pI2 img {
+        width: 65px;
+    }
+    .pI3 {
+        top: 40vw;
+        left: 30vw;
+    }
+    .pI3 img {
+        width: 60px;
+    }
+
+    /* 폴더모양 카테고리 */
+    .p_m_folderIcon_container {
+        margin-top: 165px;
+        padding: 0 270px;
+    }
+
+    .folderImg {
+        display: flex;
+        gap: 100px;
+        padding: 70px 0px;
+        /* 호버 시 이미지 변경을 위한 트랜잭션 */
+        transition: all 0.3s ease-in-out;
+        justify-content:center;
+    }
+
+    /* ================================================== */
+    /* 호버 시 이미지 변경 */
+    .atherFolder img:hover {
+        content: url('../images/main/allFolder.svg'); /* atherFolder 호버 시 변경할 이미지 경로 */
+    }
+    /* ================================================== */
+
+    .allFloder,
+    .atherFolder {
+        width: 83px;
+        height: 106px;
+        display: flex;
+        flex-direction: column;    /* 세로 정렬 */
+        align-items: center;       /* 가로 가운데 정렬 */
+        justify-content: center;  
+        transform: scale(0.9);
+        text-align: center;
+    }
+
+    .allFloder p,
+    .atherFolder p {
+        padding-top: 10px;
+        font-size: 25px;
+        font-family: var(--point-font-en-ko);
+    }
+
+    .folderImg img {
+        width: 100%;
+    }
+
+    /* 상품 목록 전체 컨테이너 */
+    .p_m_product_container {
+        padding: 0px 270px 25px;
+    }
+
+    .p_m_product_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+    }
+
+    /* 더보기 */
+    .moreList {
+        font-size: 30px;
+        font-family: var(--point-font-en-ko);
+        padding: 0 0 25px ;
+        float: right;
+    }
+
+    /* 신상, 인기 상품목록 */
+    .p_m_product_list_container {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        box-sizing: border-box;
+        gap: 35px 39px;
+    }
+
+    .p_m_product_list img, .m_m_product_text {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .p_m_product_list img:hover {
+        filter: brightness(30%) contrast(100%) sepia(20%);
+    }
+    
+    .p_m_product_text {
+        padding-top: 13px;
+    }
+
+    .p_m_product_text>p,
+    .p_m_product_text>h6,
+    .p_m_product_text>h4,
+    .p_m_product_text>h2
+    {
+        padding: 5px 0px 5px;
+    }
+
+    .p_m_product_text h6 {
+        font-family: var(--point-font-en-ko);
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-weight: normal;
+        font-size: 18px;
+    }
+    
+    .p_m_product_text h2 {
+        font-family: var(--base-font-en-ko-300);
+        font-size: 14px;
+        color: #999;
+        text-decoration: line-through;
+    }
+    
+    .sale_price {
+        display: flex;
+        gap: 10px;
+    }
+       
+    .p_m_product_text h4 {
+        font-family: var(--base-font-en-ko-500);
+        font-size: 16px;
+        color: var(--main-color-red);
+    }
+    
+    .p_m_product_text p {
+        font-family: var(--base-font-en-ko-500);
+        font-size: 20px;
+    }
+    
+    .soldOut {
+        color: var(--main-color-red);
+    }
+    
+    /* 장르 상품 리스트 목록 */
+    .p_m_product_list_container_gerne {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        box-sizing: border-box;
+        gap: 35px 39px;
+    }
+
+    .p_m_product_list_gerne img {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .p_m_product_list_gerne img:hover {
+        filter: brightness(30%) contrast(100%) sepia(20%);
+    }
+    .p-sidePopup {
+        display: block;
+    }
+}
+

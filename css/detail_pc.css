@@ -1,0 +1,116 @@
+@charset "UFT-8";
+
+
+/* tablet 769~ */
+
+@media (min-width: 769px) {
+}
+
+
+/* pc 1280~ */
+@media (min-width: 1280px) {
+    /* 하단 버튼, 모바일 상세 숨김 */
+    .m-m-cart-wish-buy-container,
+    .m-product-container {
+        display: none;
+    }
+
+    /* PC 상세 보임 */
+    .p-product-container,
+    .p-sidePopup {
+        display: block;
+    }
+
+
+    /* pc에서 변경되는 부분 */
+
+    main {
+        margin-top: 200px;
+        padding: 50px 270px 0 270px;
+    }
+    /* 상품 썸네일 이미지 + 텍스트 */
+    .p-product-img-text {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: first baseline; */
+        gap: 20px;
+    }
+    /* 상품 썸네일 */
+    .product-img {
+        /* min-width: 400px; */
+        max-width: 600px;
+    }
+    .product-main-img {
+        margin-bottom: 10px;
+        /* width: 600px; */
+    }
+    /* 상품명, 가격, 정보, 버튼 */
+    .product-text {
+        min-width: 350px;
+        max-width: 600px;
+        margin: 0;
+    }
+    /* 상품명 */
+    .product-text > h2 {
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+    /* 할인율, 가격 */
+    .sale {
+        font-size: 26px;
+    }
+    .salesCost {
+        font-size: 18px;
+    }
+    .price {
+        font-size: 30px;
+    }
+    /* 버튼 */
+    .p-cart-wish-buy {
+        font-family: var(--point-font-en-ko);
+    }
+    .p-buy {
+        display: block;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        background-color: var(--main-color-red);
+        text-align: center;
+        border-radius: 10px;
+        color: var(--color-white);
+        margin-bottom: 10px;
+        margin-top: 20px;
+        font-size: 22px;
+    }
+    .p-cart-wish-chat {
+        display: flex;
+        justify-content: space-between;
+    }
+    .p-cart,
+    .p-wish,
+    .p-chat {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 30%;
+        height: 60px;
+        line-height: 60px;
+        background-color: var(--color-gray);
+        text-align: center;
+        border-radius: 10px;
+        color: var(--color-black);
+    }
+    .p-wish:hover > img,
+    .p-wish:focus > img {
+        content: url('../images/detail/wish\(focus\).svg');
+    }
+    /* 상품 상세 이미지 */
+    /* 접기/펼치기 버튼 */
+    .sum {
+        padding: 20px 0;
+    }
+    .sumBtn {
+        margin-top: 0;
+    }
+}

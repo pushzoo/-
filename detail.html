@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[플레이브] 은호 2024 BIRTHDAY 생일 키트 : 덕순이네</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- open graph -->
+    <meta property="og:title" content="PLAVE 2024 BIRTHDAY KIT_EUNHO : 덕순이네">
+    <meta property="og:image" content="https://meongz2ro.github.io/duksunTest/images/detail/productMain.jpg">
+    <meta property="og:url" content="https://meongz2ro.github.io/duksunTest/detail">
+    <!-- reset -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- font -->
+    <link rel="stylesheet" href="./css/fonts.css">
+    <!-- 공통 style -->
+    <link rel="stylesheet" href="./css/common_sub.css">
+    <!-- 개별 style -->
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/detail_pc.css">
+    <!-- plugIn js -->
+    <!-- jq -->
+    <script src="./js/common.js" defer></script>
+    <script src="./js/detail.js" defer></script>
+</head>
+
+<body>
+    <!-- ***** header ***** -->
+    <header>
+        <!-- * mobile header * -->
+        <div class="m-h-red-container">
+            <!-- * mobile header icon * -->
+            <div class="m-h-icon-container">
+                <!-- * icon left * -->
+                <div class="m-h-icon-left">
+                    <!-- 토글 -->
+                    <button id="main-toggle">
+                        <img src="./images/com/mobileToggle.svg" alt="토글 아이콘">
+                    </button>
+                    <!-- 토글버튼 클릭 시 실행되는 사이드 메뉴바 -->
+                     <div id="siderBar" class="side-bar">
+                        <div class="side-bar-header">
+                            <button id="side-toggle">
+                                <img src="./images/com/mobileSideToggle.svg" alt="토글 아이콘">
+                            </button>
+                            <img src="./images/com/headerLogo.svg" alt="사이드메뉴바 로고">
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><a href="#">공지<span>></span></a></li>
+                                <li><a href="#">상점<span>></span></a></li>
+                                <li><a href="#">펀딩<span>></span></a></li>
+                                <li><a href="#">질문<span>></span></a></li>
+                                <li><a href="#">후기<span>></span></a></li>
+                                <li><a href="#">마이페이지<span>></span></a></li>
+                            </ul>
+                        </nav>
+                     </div>
+                    <!-- 로고 -->
+                    <a class="logo" href="./index.html">
+                        <img src="./images/com/headerLogo.svg" alt="로고 이미지">
+                    </a>
+                </div>
+                <!-- * icon right * -->
+                <div class="m-h-icon-right">
+                    <!-- 검색 -->
+                    <a href="#">
+                        <img src="./images/com/search.svg" alt="검색 아이콘">
+                    </a>
+                    <!-- 마이 페이지 -->
+                    <a href="#">
+                        <img src="./images/com/mypage.svg" alt="마이 페이지 아이콘">
+                    </a>
+                    <!-- 장바구니 -->
+                    <a href="./cart.html">
+                        <img src="./images/com/cart.svg" alt="장바구니 아이콘">
+                    </a>
+                    <!-- 챗봇 -->
+                    <a href="#">
+                        <img src="./images/com/chatbot.svg" alt="챗봇 아이콘">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- * pc header * -->
+        <div class="p-h-container">
+            <div class="red"></div>
+            <div class="beige">
+                <a class="h-logo" href="./index.html">
+                    <img src="./images/com/headerLogoPC.svg" alt="pc로고">
+                </a>
+                <!-- pc header menu -->
+                <div class="p-h-nav-container">
+                    <nav>
+                        <ul>
+                            <li><a href="#">공지</a></li>
+                            <li>|</li>
+                            <li><a href="#">질문</a></li>
+                            <li>|</li>
+                            <li><a href="#">후기</a></li>
+                            <li>|</li>
+                            <li><a href="#">펀딩</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul>
+                            <li><a href="#">로그인</a></li>
+                            <li>|</li>
+                            <li><a href="#">회원가입</a></li>
+                            <li>|</li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li>|</li>
+                            <li><a href="./cart.html">장바구니</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ***** main ***** -->
+    <main>
+        <!-- * cart, wishlist, buy * -->
+        <div class="m-m-cart-wish-buy-container">
+            <div class="m-m-cart-wish-buy-wrapper">
+                <!-- 장바구니 -->
+                <div class="cart">
+                    <a href="#">
+                        <img src="./images/detail/addCart.svg" alt="장바구니 추가 아이콘">
+                    </a>
+                </div>
+                <!-- 찜하기 -->
+                <div class="wish">
+                    <a href="#">
+                        <img class="default" src="./images/detail/wish.svg" alt="찜하기 아이콘">
+                        <img class="focus" src="./images/detail/wish(focus).svg" alt="찜하기 아이콘">
+                        <p>찜하기</p>
+                    </a>
+                </div>
+                <!-- 구매하기 -->
+                <div class="buy">
+                    <p>구매하기</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- * mobile product * -->
+        <div class="m-product-container">
+            <!-- 상품 썸네일 -->
+            <div class="product-img">
+                <div class="product-main-img">
+                    <img id="thumbnail" src="./images/detail/productMain.jpg" alt="상품 메인 썸네일">
+                </div>
+                <div class="product-sub-img">
+                    <a onclick="productThumbnail1()" class="sub" href="#">
+                        <img src="./images/detail/productMain.jpg" alt="상품 서브 썸네일 1">
+                    </a>
+                    <a onclick="productThumbnail2()"  class="sub" href="#">
+                        <img src="./images/detail/productSub.jpg" alt="상품 서브 썸네일 1">
+                    </a>
+                </div>
+            </div>
+
+            <!-- 상품명, 가격, 정보 -->
+            <div class="product-text">
+                <!-- 상품명 -->
+                <h2>
+                    [플레이브] 은호 2024 BIRTHDAY 생일 키트
+                </h2>
+                <!-- 할인율, 가격 -->
+                <div class="sale-price-container">
+                    <p class="sale">5%</p>
+                    <div class="price-wrapper">
+                        <p class="salesCost">
+                            <s>25,000원</s>
+                        </p>
+                        <p class="price">
+                            23,750원
+                        </p>
+                    </div>
+                </div>
+                <!-- 정보 -->
+                <div class="information-container">
+                    <div class="information-wrapper-l">
+                        <p class="txt-b">판매가</p>
+                        <p>제조사</p>
+                        <p>사이즈</p>
+                    </div>
+                    <div class="information-wrapper-r">
+                        <p>23,750원</p>
+                        <p>순덕이네</p>
+                        <p>125 x 160 x 42 mm</p>
+                    </div>
+                </div>
+                <!-- 수량 -->
+                <div class="amounts-container">
+                    <p>(최소주문 수량 1개 이상)</p>
+                    <div class="icon-text">
+                        <div class="mark"><p>!</p></div>
+                        <p>수량을 선택해주세요.</p>
+                    </div>
+                    <div class="amounts-main">
+                        <div class="product-name">
+                            <p>[플레이브] 은호 2024 BIRTHDAY 생일 키트</p>
+                        </div>
+                        <div class="amounts-btn">
+                            <!-- 수량 버튼들 -->
+                            <input class="amountsCss" type="text" name="amounts" value="1" size="3" readonly> <!-- 기본 수량 1로 설정, 수동 입력 방지 -->
+                            <div class="btnBox">
+                                <input class="plusCss" type="button" value=" ▲ " onclick="add();">
+                                <input class="minusCss" type="button" value=" ▼ " onclick="del();">
+                            </div>
+                            <!-- 가격 정보 -->
+                            <input type="hidden" name="sell_price" value="23750"> <!-- 상품 가격 설정 -->
+                            <!-- 총 금액 표시 -->
+                            <div class="priceCss"><span id="check_price">23,750</span>원</div>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div>총 상품금액 : <span id="total_price">23,750</span> 원</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 상품 키워드 -->
+            <div class="product-keyword">
+                <p class="pk">아이돌</p>
+                <p class="pk">플레이브</p>
+                <p class="pk">한정수량</p>
+                <p class="pk">키트</p>
+                <p class="pk">포토카드</p>
+                <p class="pk">키링</p>
+                <p class="pk">포토북</p>
+                <p class="pk">포스터</p>
+                <p class="pk">콜렉트북</p>
+                <p class="pk">스티커</p>
+                <p class="pk">띠부씰</p>
+                <p class="pk">국내제작</p>
+                <p class="pk">재판없음</p>
+                <p class="pk">하루배송</p>
+            </div>
+
+            <!-- 상품 상세정보 -->
+            <div class="product-details-text">
+                <ul class="details-menu">
+                    <li><a class="defaultMenu" href="#">상세정보</a></li>
+                    <li><a class="clickMenu" href="#">구매평 (524)</a></li>
+                    <li><a class="clickMenu" href="#">Q&A</a></li>
+                </ul>
+                <div class="details-text">
+                    <p>
+                        * 포장 방법은 상세 페이지와 상이할 수 있습니다.
+                    </p>
+                    <p>
+                        * 제품의 오차와 정상 범위에 관한 내용으로,
+                        <br>
+                        NOTICE 탭의 ＜제품 관련 공지＞를 꼭 읽어보신 후 주문 부탁드립니다.
+                    </p>
+                    <p>
+                        * 인쇄 제품은 생산 시기에 따라 색감 차이가 발생할 수 있습니다.
+                        <br>
+                        인쇄는 날씨의 영향을 많이 받아, 인쇄소에서 언제 인쇄하느냐에 따라 조금씩 달라집니다.
+                        <br>
+                        사람마다 느끼는 정도가 다를 수 있어, 전체적인 검수 과정 이후 포장되고 있습니다.
+                        <br>
+                        큰 색 차이가 있는 것들은 검수 과정에서 빠지고 있으나,
+                        <br>
+                        인쇄소에서도 파본으로 인정하지 않고 큰 차이가 보이지 않는다면 파본으로 보고 있지 않습니다.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 상품 상세이미지 -->
+            <div class="product-details-img">
+                <img src="./images/detail/productDetails1.jpg" alt="기본 노출 상세 이미지">
+                <!-- 숨김 이미지 -->
+                <div class="sumImg">
+                    <img src="./images/detail/productDetails2.jpg" alt="숨김 상세 이미지 1">
+                    <img src="./images/detail/productDetails3.jpg" alt="숨김 상세 이미지 2">
+                    <img src="./images/detail/productDetails4.jpg" alt="숨김 상세 이미지 3">
+                    <img src="./images/detail/productDetails5.jpg" alt="숨김 상세 이미지 4">
+                    <img src="./images/detail/productDetails6.jpg" alt="숨김 상세 이미지 5">                  
+                </div>
+                <!-- 접기/펼치기 -->
+                <div class="sum">
+                    <!-- 버튼 -->
+                    <div class="sumBtn" onclick="toggleImages();">
+                        상세정보 펼치기
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- * pc product * -->
+        <div class="p-product-container">
+            <div class="p-product-img-text">
+                <!-- 상품 썸네일 -->
+                <div class="product-img">
+                    <div class="product-main-img">
+                        <img id="thumbnailp" src="./images/detail/productMain.jpg" alt="상품 메인 썸네일">
+                    </div>
+                    <div class="product-sub-img">
+                        <a onclick="productThumbnail1p()" class="sub" href="#">
+                            <img src="./images/detail/productMain.jpg" alt="상품 서브 썸네일 1">
+                        </a>
+                        <a onclick="productThumbnail2p()"  class="sub" href="#">
+                            <img src="./images/detail/productSub.jpg" alt="상품 서브 썸네일 1">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 상품명, 가격, 정보, 버튼 -->
+                <div class="product-text">
+                    <!-- 상품명 -->
+                    <h2>
+                        [플레이브] 은호 2024 BIRTHDAY 생일 키트
+                    </h2>
+                    <!-- 할인율, 가격 -->
+                    <div class="sale-price-container">
+                        <p class="sale">5%</p>
+                        <div class="price-wrapper">
+                            <p class="salesCost">
+                                <s>25,000원</s>
+                            </p>
+                            <p class="price">
+                                23,750원
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 정보 -->
+                    <div class="information-container">
+                        <div class="information-wrapper-l">
+                            <p class="txt-b">판매가</p>
+                            <p>제조사</p>
+                            <p>사이즈</p>
+                        </div>
+                        <div class="information-wrapper-r">
+                            <p>23,750원</p>
+                            <p>순덕이네</p>
+                            <p>125 x 160 x 42 mm</p>
+                        </div>
+                    </div>
+                    <!-- 수량 -->
+                    <div class="amounts-container">
+                        <p>(최소주문 수량 1개 이상)</p>
+                        <div class="icon-text">
+                            <div class="mark"><p>!</p></div>
+                            <p>수량을 선택해주세요.</p>
+                        </div>
+                        <div class="amounts-main">
+                            <div class="product-name">
+                                <p>[플레이브] 은호 2024 BIRTHDAY 생일 키트</p>
+                            </div>
+                            <div class="amounts-btn">
+                                <!-- 수량 버튼들 -->
+                                <input class="amountsCss" type="text" name="p_amounts" value="1" size="3" readonly> <!-- 기본 수량 1로 설정, 수동 입력 방지 -->
+                                <div class="btnBox">
+                                    <input class="plusCss" type="button" value=" ▲ " onclick="addp();">
+                                    <input class="minusCss" type="button" value=" ▼ " onclick="delp();">
+                                </div>
+                                <!-- 가격 정보 -->
+                                <input type="hidden" name="p_sell_price" value="23750"> <!-- 상품 가격 설정 -->
+                                <!-- 총 금액 표시 -->
+                                <div class="priceCss"><span id="p_check_price">23,750</span>원</div>
+                            </div>
+                        </div>
+                        <div class="total">
+                            <div>총 상품금액 : <span id="p_total_price">23,750</span> 원</div>
+                        </div>
+                    </div>
+                    <!-- 버튼 -->
+                    <div class="p-cart-wish-buy">
+                        <a href="#" class="p-buy">
+                            <p>바로 구매</p>
+                        </a>
+                        <div class="p-cart-wish-chat">
+                            <a href="#" class="p-cart">
+                                <img src="./images/detail/addCart.svg" alt="장바구니">
+                                <p>장바구니</p>
+                            </a>
+                            <a href="#" class="p-wish">
+                                <img src="./images/detail/wish.svg" alt="찜하기">
+                                <p>관심 등록</p>
+                            </a>
+                            <a href="#" class="p-chat">
+                                <img src="./images/detail/chat.svg" alt="문의사항">
+                                <p>1:1 메시지</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 상품 키워드 -->
+            <div class="product-keyword">
+                <p class="pk">아이돌</p>
+                <p class="pk">플레이브</p>
+                <p class="pk">한정수량</p>
+                <p class="pk">키트</p>
+                <p class="pk">포토카드</p>
+                <p class="pk">키링</p>
+                <p class="pk">포토북</p>
+                <p class="pk">포스터</p>
+                <p class="pk">콜렉트북</p>
+                <p class="pk">스티커</p>
+                <p class="pk">띠부씰</p>
+                <p class="pk">국내제작</p>
+                <p class="pk">재판없음</p>
+                <p class="pk">하루배송</p>
+            </div>
+
+            <!-- 상품 상세정보 -->
+            <div class="product-details-text">
+                <ul class="details-menu">
+                    <li><a class="defaultMenu" href="#">상세정보</a></li>
+                    <li><a class="clickMenu" href="#">구매평 (524)</a></li>
+                    <li><a class="clickMenu" href="#">Q&A</a></li>
+                </ul>
+                <div class="details-text">
+                    <p>
+                        * 포장 방법은 상세 페이지와 상이할 수 있습니다.
+                    </p>
+                    <p>
+                        * 제품의 오차와 정상 범위에 관한 내용으로,
+                        <br>
+                        NOTICE 탭의 ＜제품 관련 공지＞를 꼭 읽어보신 후 주문 부탁드립니다.
+                    </p>
+                    <p>
+                        * 인쇄 제품은 생산 시기에 따라 색감 차이가 발생할 수 있습니다.
+                        <br>
+                        인쇄는 날씨의 영향을 많이 받아, 인쇄소에서 언제 인쇄하느냐에 따라 조금씩 달라집니다.
+                        <br>
+                        사람마다 느끼는 정도가 다를 수 있어, 전체적인 검수 과정 이후 포장되고 있습니다.
+                        <br>
+                        큰 색 차이가 있는 것들은 검수 과정에서 빠지고 있으나,
+                        <br>
+                        인쇄소에서도 파본으로 인정하지 않고 큰 차이가 보이지 않는다면 파본으로 보고 있지 않습니다.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 상품 상세이미지 -->
+            <div class="product-details-img">
+                <img src="./images/detail/productDetails1.jpg" alt="기본 노출 상세 이미지">
+                <!-- 숨김 이미지 -->
+                <div class="sumImg sumImgp">
+                    <img src="./images/detail/productDetails2.jpg" alt="숨김 상세 이미지 1">
+                    <img src="./images/detail/productDetails3.jpg" alt="숨김 상세 이미지 2">
+                    <img src="./images/detail/productDetails4.jpg" alt="숨김 상세 이미지 3">
+                    <img src="./images/detail/productDetails5.jpg" alt="숨김 상세 이미지 4">
+                    <img src="./images/detail/productDetails6.jpg" alt="숨김 상세 이미지 5">                  
+                </div>
+                <!-- 접기/펼치기 -->
+                <div class="sum sump">
+                    <!-- 버튼 -->
+                    <div class="sumBtn sumBtnp" onclick="toggleImagesp();">
+                        상세정보 펼치기
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ***** footer ***** -->
+    <footer>
+        <!-- * 하단 로고 * -->
+        <div class="f-logo">
+            <a href="./index.html">
+                <img src="./images/com/footerLogo.svg" alt="하단 로고 아이콘">
+            </a>
+        </div>
+        <div class="c-f-csr-comm-container">
+            <!-- 고객센터 -->
+            <div class="csr">
+                <h6>고객센터</h6>
+                <a href="tel:070-4628-1793">
+                    070-4628-1793
+                </a>
+                <p>
+                    평일: 10:00 ~ 17:30 <br>
+                    점심시간: 12:30 ~ 13:30 <br>
+                    주말 및 공휴일은 휴무 전화상담시 <br>
+                    →채팅상담으로 변경됩니다 <br>
+                </p>
+            </div>
+            <!-- 커뮤니티 -->
+            <div class="comm">
+                <h6>커뮤니티</h6>
+                <div class="f-menu">
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">문의게시판</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">주문조회</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 회사 정보 -->
+        <div class="company">
+            <p>
+                법인명(상호): (주)블라블라 | 대표자: 덕순이 | 개인정보관리책임자: 우주인
+                사업자등록번호: 789-45-61230 | 통신판매업신고: 제2024-수원팔달-0813호
+                주소: 수원시 팔달구 수원역
+            </p>
+        </div>
+        <!-- 하단 네비 -->
+        <nav class="c-f-nav">
+            <ul>
+                <li><a href="#">이용안내</a></li>
+                <li>|</li>
+                <li><a href="#">개인정보취급방식</a></li>
+                <li>|</li>
+                <li><a href="#">이용약관</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- ============================== 사이드 팝업 ==============================-->
+    <div class="p-sidePopup">
+        <div class="search-btn">
+            <button id="searchBtn">
+                <img id="searchIcon" src="./images/com/SearchBtn.svg" alt="사이드팝업 검색">
+            </button>
+        </div>
+        <div class="chat-box">
+            <button id="chatBtn">
+                <img id="chatIcon" src="./images/com/sidePopupChatBot.svg" alt="사이드팝업 챗">
+            </button>
+            <div class="count-badge" id="messageBadge">
+                5
+            </div>
+        </div>
+        <div class="site-up-slide">
+            <a href="./detail.html">
+                <img src="./images/com/sidePopupUpSlide.svg" alt="사이드팝업 맨위로">
+            </a>
+        </div>
+    </div>
+
+    <!--============================== 검색 팝업창 ==============================-->
+    <div id="side-popup-search" class="popup-searchbtn">
+        <div class="popup-search-content">
+            <div class="searh-header-container">
+                <input type="text" placeholder="검색어를 입력하세요">
+                <img src="./images/com/popup-searchBtn.svg" alt="팝업창 검색아이콘">
+            </div>
+            <div class="search-main-container">
+                <div class="searh-history-container">
+                    <h1>최근 검색어</h1>
+                    <p>최근에 검색한 기록이 없습니다</p>
+                </div>
+                <div class="searh-ranking-container">
+                    <h1>실시간 인기 검색어</h1>
+                    <div class="rankimg-list">
+                        <div class="ranking-title">
+                            <h2>1</h2>
+                            <p>PLAVE</p>
+                        </div>
+                        <div class="ranking-title">
+                            <h2>2</h2>
+                            <p>치이카와</p>
+                        </div>
+                        <div class="ranking-title">
+                            <h2>3</h2>
+                            <p>나의 히어로 ...</p>
+                        </div>
+                        <div class="ranking-title">
+                            <h2>4</h2>
+                            <p>원피스</p>
+                        </div>
+                        <div class="ranking-title">
+                            <h2>5</h2>
+                            <p>하츄핑</p>
+                        </div>
+                        <div class="ranking-title">
+                            <h2>6</h2>
+                            <p>BTS</p>
+                        </div>
+                        <div class="ranking-title">
+                            <h2>7</h2>
+                            <p>세븐틴</p>
+                        </div>
+                        <div class="ranking-title">
+                            <h2>8</h2>
+                            <p>명탐정 코난</p>
+                        </div>
+                        <div class="ranking-title">
+                            <h2>9</h2>
+                            <p>뉴진스</p>
+                        </div>
+                        <div class="ranking-title">
+                            <h2>10</h2>
+                            <p>이누야샤</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!--============================== 챗봇 팝업창 ==============================-->
+   <div id="chatPopup" class="popup-chatbtn">
+        <div class="popup-header-chat">
+            <div class="header-up">
+                <img src="./images/com/ducksunProfile.svg" alt="내 프로필">
+                <h1>CHAT</h1>
+                <div class="chat-haderBtn">
+                    <button>
+                        <img src="./images/com/chatSearch.svg" alt="챗봇 팝업창 검색아이콘">
+                    </button>
+                    <button>
+                        <img src="./images/com/chatSetting.svg" alt="챗봇 팝업창 설정아이콘">
+                    </button>
+                </div>
+            </div>
+            <div class="header-down">
+                <img src="./images/com/ducksunProfile.svg" alt="내 프로필">
+                <h5>덕순봇 : 무엇을 도와드릴까요?</h5>
+            </div>
+        </div>
+        <div id="popup-mainChat" class="popup-main-chat">
+            <div class="chat-list">
+                <img src="./images/com/goodsShop1.svg" alt="굿즈샵 프로필1">
+                <h5>굿즈샵 : 하고 싶은데요 어떻게 ...</h5>
+            </div>
+            <div class="chat-list">
+                <img src="./images/com/goodsShop2.svg" alt="굿즈샵 프로필2">
+                <h5>이딴가게 : 알겠습니다</h5>
+            </div>
+            <div class="chat-list">
+                <img src="./images/com/goodsShop3.svg" alt="굿즈샵 프로필3">
+                <h5>도키도키굿즈 : 감사합니다</h5>
+            </div>
+            <div class="chat-list">
+                <img src="./images/com/goodsShop4.svg" alt="굿즈샵 프로필4">
+                <h5>애니메굿즈 : 하려고 하는데 ...</h5>
+            </div>
+            <div class="chat-list">
+                <img src="./images/com/goodsShop5.svg" alt="굿즈샵 프로필5">
+                <h5>HEROTIME : 넹</h5>
+            </div>
+
+            <!-- ======================== 챗 스크롤 확인용 ============================= -->
+            <div class="chat-list">
+                <img src="./images/com/goodsShop5.svg" alt="굿즈샵 프로필5">
+                <h5>HEROTIME : 넹</h5>
+            </div>
+            <div class="chat-list">
+                <img src="./images/com/goodsShop5.svg" alt="굿즈샵 프로필5">
+                <h5>HEROTIME : 넹</h5>
+            </div>
+            <div class="chat-list">
+                <img src="./images/com/goodsShop5.svg" alt="굿즈샵 프로필5">
+                <h5>HEROTIME : 넹</h5>
+            </div>
+            <div class="chat-list">
+                <img src="./images/com/goodsShop5.svg" alt="굿즈샵 프로필5">
+                <h5>HEROTIME : 넹</h5>
+            </div>
+            <div class="chat-list">
+                <img src="./images/com/goodsShop5.svg" alt="굿즈샵 프로필5">
+                <h5>HEROTIME : 넹</h5>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
