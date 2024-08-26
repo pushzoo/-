@@ -127,7 +127,7 @@
     </header>
     <main>
         <section class="category">
-            <h1 class="caTitle">카테고리를 참고한 추천 상품이에요!</h1>
+            <h2 class="caTitle">카테고리를 참고한 추천 상품이에요!</h2>
             <ul class="myCa">
                 <li>캐릭터</li>
                 <li>수제인형</li>
@@ -233,12 +233,12 @@
             <button class="toggle-btn" id="toggle-btn">펼쳐서 보기</button>
         </section>
         <section class="cartList">
-            <h1>장바구니 (2)</h1>
+            <h2>장바구니 (2)</h2>
             <div class="cartandpay">
                 <form class="clist">
                     <button class="Dl" type="button" onclick="deleteSelectedItems()">선택 항목 삭제</button>
                     <div class="cBox">
-                        <label for="checkbox1">
+                        <div class="checkbox1">
                             <div class="cd">
                                 <div class="checkbox">
                                     <input type="checkbox" id="checkbox1">
@@ -256,16 +256,16 @@
                                         <p>26,250원</p>
                                         <div class="quantity-container">
                                             <button class="quantity-btn" onclick="decrease(event, this)">-</button>
-                                            <input type="text" id="quantity" value="1" readonly>
+                                            <input type="text" class="count" value="1" readonly>
                                             <button class="quantity-btn" onclick="increase(event, this)">+</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </label>
+                        </div>
                     </div>
                     <div class="cBox">
-                        <label for="checkbox2">
+                        <div class="checkbox2">
                             <div class="cd">
                                 <div class="checkbox">
                                     <input type="checkbox" id="checkbox2">
@@ -283,19 +283,19 @@
                                         <p>6,500원</p>
                                         <div class="quantity-container">
                                             <button class="quantity-btn" onclick="decrease(event, this)">-</button>
-                                            <input type="text" id="quantity" value="1" readonly>
+                                            <input type="text" class="count" value="1" readonly>
                                             <button class="quantity-btn" onclick="increase(event, this)">+</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </label>
+                        </div>
                     </div>
                 </form>
 
                 <div class="price">
                     <div class="pay">
-                        <h1>주문상품</h1>
+                        <h2>주문상품</h2>
                         <div class="payM">
                             <div class="pm">
                                 <p>총 상품금액</p>
@@ -334,7 +334,7 @@
         </section>
 
         <section class="guide">
-            <h1>장바구니 이용안내</h1>
+            <h2>장바구니 이용안내</h2>
             <ul>
                 <li>선택하신 상품의 수량을 변경하시려면 수량변경 후 [변경] 버튼을 누르시면 됩니다.</li>
                 <li>[쇼핑계속하기] 버튼을 누르시면 쇼핑을 계속 하실 수 있습니다.</li>
@@ -343,7 +343,7 @@
                 <li>해외배송 상품과 국내배송 상품은 함께 결제하실 수 없으니 장바구니 별로 따로 결제해 주시기 바랍니다.</li>
                 <li>해외배송 가능 상품의 경우 국내배송 장바구니에 담았다가 해외배송 장바구니로 이동하여 결제하실 수 있습니다.</li>
             </ul>
-            <h1>무이자할부 이용안내</h1>
+            <h2>무이자할부 이용안내</h2>
             <ul>
                 <li>상품별 무이자할부 혜택을 받으시려면 무이자할부 상품만 선택하여 [주문하기] 버튼을 눌러 주문/결제 하시면 됩니다.</li>
                 <li>[전체 상품 주문] 버튼을 누르시면 장바구니의 구분없이 선택된 모든 상품에 대한 주문/결제가 이루어집니다.</li>
@@ -445,11 +445,11 @@
             </div>
             <div class="search-main-container">
                 <div class="searh-history-container">
-                    <h1>최근 검색어</h1>
+                    <h2>최근 검색어</h2>
                     <p>최근에 검색한 기록이 없습니다</p>
                 </div>
                 <div class="searh-ranking-container">
-                    <h1>실시간 인기 검색어</h1>
+                    <h2>실시간 인기 검색어</h2>
                     <div class="rankimg-list">
                         <div class="ranking-title">
                             <h2>1</h2>
@@ -498,11 +498,11 @@
     </div>
 
     <!--============================== 챗봇 팝업창 ==============================-->
-   <div id="chatPopup" class="popup-chatbtn">
+    <div id="chatPopup" class="popup-chatbtn">
         <div class="popup-header-chat">
             <div class="header-up">
                 <img src="./images/com/ducksunProfile.svg" alt="내 프로필">
-                <h1>CHAT</h1>
+                <h2>CHAT</h2>
                 <div class="chat-haderBtn">
                     <button>
                         <img src="./images/com/chatSearch.svg" alt="챗봇 팝업창 검색아이콘">

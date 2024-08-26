@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // 수량 증가 함수
 function increase(event, button) {
     event.preventDefault(); // 버튼 클릭 시 기본 동작 방지
-    const quantityInput = button.parentElement.querySelector('#quantity');
+    const quantityInput = button.parentElement.querySelector('.count');
     let currentValue = parseInt(quantityInput.value, 10);
     if (!isNaN(currentValue)) {
         quantityInput.value = currentValue + 1;
@@ -121,7 +121,7 @@ function increase(event, button) {
 // 수량 감소 함수
 function decrease(event, button) {
     event.preventDefault(); // 버튼 클릭 시 기본 동작 방지
-    const quantityInput = button.parentElement.querySelector('#quantity');
+    const quantityInput = button.parentElement.querySelector('.count');
     let currentValue = parseInt(quantityInput.value, 10);
     if (!isNaN(currentValue) && currentValue > 1) {
         quantityInput.value = currentValue - 1;
